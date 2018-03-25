@@ -1,0 +1,33 @@
+{
+  "name": "smile42",
+  "version": "1.0.0",
+  "description": "add a smile on the profil pic of 42's students",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.3",
+    "faceapp": "^0.4.3",
+    "fs": "^0.0.1-security",
+    "npm": "^5.8.0",
+    "superagent": "^3.8.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js",
+    "install": "bash install.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sapinos/smile42.git"
+  },
+  "keywords": [
+    "smile",
+    "42"
+  ],
+  "author": "clanier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sapinos/smile42/issues"
+  },
+  "homepage": "https://github.com/sapinos/smile42#readme"
+}
