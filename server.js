@@ -19,7 +19,7 @@ app.get("/smile/:login", function(req, res) {
 		res.end(img, "binary");
 	}).catch(function(err) {
 		res.status(400);
-		res.send(errcode);
+		res.send(err);
 	});
 })
 
@@ -40,7 +40,7 @@ async function	addSmile(login) {
 		errcode = "An error has occured";
 		fs.writeFileSync("static/smile/smile_" + login, final);
 	} catch (err) {
-		throw new Error(errcode);
+		throw (errcode);
 	}
 }
 
