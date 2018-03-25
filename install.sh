@@ -1,2 +1,2 @@
-mkdir static
-mkdir static/smile
+mkdir -p static
+mkdir -p static/smile
