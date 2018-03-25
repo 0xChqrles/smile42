@@ -18,11 +18,13 @@ app.get("/smile/:login", function(req, res) {
 		res.writeHead(200, {"Content-Type": "image/jpeg"});
 		res.end(img, "binary");
 	}).catch(function(err) {
+		res.status(400);
 		res.send(errcode);
 	});
 })
 
 app.use(function(req, res) {
+	res.status(404)
 	res.send("404");
 })
 
